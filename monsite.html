@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mon premier site</title>
+</head>
+<div class="neige-container" aria-hidden="true">
+  <div class="flocon">❅</div>
+  <div class="flocon">❆</div>
+  <div class="flocon">❅</div>
+  <div class="flocon">❄</div>
+  <div class="flocon">❅</div>
+  <div class="flocon">❆</div>
+  <div class="flocon">❄</div>
+  <div class="flocon">❅</div>
+  <div class="flocon">❆</div>
+  <div class="flocon">❄</div>
+  </div>
+
+<style>
+  /* On s'assure que la neige ne gêne pas les clics sur le site */
+  .neige-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Très important : permet de cliquer sur tes boutons derrière */
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .flocon {
+    position: absolute;
+    top: -10%;
+    color: white;
+    font-size: 1.5rem;
+    user-select: none;
+    animation: chute linear infinite;
+  }
+
+  /* Animation de la chute */
+  @keyframes chute {
+    0% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) translateX(50px);
+      opacity: 0.3;
+    }
+  }
+
+  /* Personnalisation de chaque flocon (position et vitesse) */
+  .flocon:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: 1s; }
+  .flocon:nth-child(2) { left: 20%; animation-duration: 12s; animation-delay: 3s; font-size: 1rem; }
+  .flocon:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: 0s; }
+  .flocon:nth-child(4) { left: 45%; animation-duration: 15s; animation-delay: 5s; font-size: 0.8rem; }
+  .flocon:nth-child(5) { left: 55%; animation-duration: 11s; animation-delay: 2s; }
+  .flocon:nth-child(6) { left: 70%; animation-duration: 9s; animation-delay: 4s; font-size: 1.2rem; }
+  .flocon:nth-child(7) { left: 80%; animation-duration: 14s; animation-delay: 1s; }
+  .flocon:nth-child(8) { left: 90%; animation-duration: 10s; animation-delay: 6s; }
+  .flocon:nth-child(9) { left: 25%; animation-duration: 13s; animation-delay: 2s; opacity: 0.5; }
+  .flocon:nth-child(10) { left: 65%; animation-duration: 7s; animation-delay: 0s; }
+</style>
+
+
+
+
+
+<body>
+<div style="background-color: #ffc65d; border: 2px solid; #ffc65d;border-radius: 15px;color: #444444; padding: 20px; text-align: center; font-family: sans-serif;">
+  <h1 style="margin: 0;gap: 40px ;">Bienvenue</h1>
+</div>
+
+
+<div style="background-color: #444444; border: 2px solid; #ffc65d;border-radius: 15px;color: #444444; padding: 20px; text-align: center; font-family: sans-serif;"></div>
+
+<h3 style=" margin-top: 60px; margin: 0; padding: 20px; text-align: center; font-family: sans-serif;font-size: 4rem;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);gap: 40px ">Bienvenue sur mon site !</h3>
+
+<div style="background-color: #444444; border: 2px solid; #ffc65d;border-radius: 15px;color: #444444; padding: 20px; text-align: center; font-family: sans-serif;"></div>
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes Cadres Personnalisés</title>
+    <style>
+        /* Mise en page globale */
+        body {
+            background-color: #2c2c2c; /* Fond sombre pour faire ressortir les cadres */
+            padding: 50px;
+        }
+
+        .conteneur-flex {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .mon-cadre {
+            border: 2px solid #ffc65d; 
+            border-radius: 15px; 
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffc65d;
+            text-align: center;
+            flex: 1;
+            max-width: 400px;
+            min-height: 400px;
+            background-color: #444444;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+            
+            /* Pour aligner le contenu verticalement */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .mon-cadre h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        .mon-cadre p {
+            color: #ffffff; /* Texte descriptif en blanc pour la lisibilité */
+            line-height: 1.6;
+        }
+
+        /* Style du lien transformé en bouton */
+        .bouton-lien {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #ffc65d;
+            color: #444444;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .bouton-lien:hover {
+            background-color: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 198, 93, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+<div class="conteneur-flex">
+
+    <div class="mon-cadre">
+        <div>
+            <h2>🎬 Montage</h2>
+            <p>Nous proposons des solutions de design innovantes pour booster votre visibilité en ligne.</p>
+        </div>
+        <a href="https://google.com" class="bouton-lien">En savoir plus</a>
+    </div>
+
+    <div class="mon-cadre">
+        <div>
+            <h2>🎬 Mes réalisations</h2>
+            <p>Découvrez notre galerie de réalisations récentes, allant du site vitrine à l'e-commerce complexe.</p>
+        </div>
+        <a href="#projets" class="bouton-lien">Voir le portfolio</a>
+    </div>
+
+    <div class="mon-cadre">
+        <div>
+            <h2>Contact</h2>
+            <p>Une idée de projet ? Contactez-nous dès aujourd'hui pour obtenir un devis gratuit et personnalisé.</p>
+        </div>
+        <a href="mailto:votre@email.com" class="bouton-lien">Écrivez-nous</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+<div style="background-color: #444444; border: 2px solid; #ffc65d;border-radius: 15px;color: #444444; padding: 20px; text-align: center; font-family: sans-serif;"></div>
+<div style="background-color: #444444; border: 2px solid; #ffc65d;border-radius: 15px;color: #444444; padding: 20px; text-align: center; font-family: sans-serif;"></div>
+
+<div class="ma-ligne">
+    <h4 style="padding-left: 40px; sans-serif ; "> Dernières réalisations </h4>
+</div>
+<h4 style="padding-left: 40px; sans-serif ; "> Dernières réalisations </h4>
+<style>
+  .ma-ligne {
+    
+    background-color: #000000; /* Ta couleur jaune */
+    height: 50px;               /* L'ÉPAISSEUR de la ligne */
+    width: 7px;              /* La LONGUEUR de la ligne */
+    
+    /* Options pour le placement */
+    margin: 20px auto;         /* Espace autour et centrage horizontal */
+    border-radius: 10px;       /* Pour arrondir les bords (optionnel) */
+    margin: 20px 0
+  }
+</style>
+
+
+
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UlGtZFk7gxg" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<style>
+  .video-container {
+    display: flex;
+    justify-content: center; /* Centre la vidéo horizontalement */
+    margin: 40px 0;
+    padding: 10px;
+    border: 2px solid #ffc65d; /* Bordure jaune assortie à vos cadres */
+    border-radius: 15px;
+    background-color: #444444; /* Fond gris assorti */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Pour que la vidéo soit responsive sur mobile */
+  iframe {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+</style>
+
+<section id="contact-form-container" style="max-width: 600px; margin: 40px auto; padding: 20px; font-family: Arial, sans-serif; border: 2px solid #ffc65d; border-radius: 15px; background-color: #444444;">
+    <h2 style="text-align: center; color: #333;">Contactez-nous</h2>
+    <p style="text-align: center; color: #666;">Une question ? Remplissez le formulaire ci-dessous.</p>
+
+    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        
+        <div>
+            <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold;">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required 
+                   style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <div>
+            <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Adresse Email</label>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com" required 
+                   style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+        </div>
+
+        <div>
+            <label for="subject" style="display: block; margin-bottom: 5px; font-weight: bold;">Sujet</label>
+            <select id="subject" name="subject" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                <option value="demande_info">Demande d'information</option>
+                <option value="support">Support technique</option>
+                <option value="autre">Autre</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold;">Votre message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required 
+                      style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+        </div>
+
+        <button type="submit" style="background-color: #ffc65d; color: white; padding: 12px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold;">
+            Envoyer le message
+        </button>
+
+    </form>
+</section>
+
+
+
+
+<style>
+
+  :root {
+    --couleur-principale: #444444; /* Définition de la variable */
+  }
+
+  body {
+    background-color: var(--couleur-principale); /* Utilisation */
+  }
+</style>
